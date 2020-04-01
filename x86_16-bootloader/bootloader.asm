@@ -2,12 +2,12 @@
 start:	jmp init_stack
 
 init_stack:
-    mov ax, 0x07C0
-    mov ds, ax
-    mov ax, 0x07E0
-    mov ss, ax
-    mov sp, 0x2000
-    jmp boot
+	mov ax, 0x07C0
+	mov ds, ax
+	mov ax, 0x07E0
+	mov ss, ax
+	mov sp, 0x2000
+	jmp boot
 
 boot:
 	cli
@@ -22,14 +22,14 @@ boot:
 	hlt
 
 MovCursor:
+		;dh -> row / dl -> col
 	push bp
 	mov bp, sp
 	pusha
 
-    ; dh -> row / dl -> col
-    mov ah, 0x2
-    mov bh, 0x00
-    int 0x10
+	mov ah, 0x2
+	mov bh, 0x00
+    	int 0x10
 
 	popa
 	mov sp, bp
@@ -38,24 +38,25 @@ MovCursor:
 
 
 PutChar:
-    push bp
-    mov bp, sp
-    pusha
+		;al -> char to print / bh -> color (only in graphic mode) / cx -> number of times the char will be printed
+    	push bp
+    	mov bp, sp
+    	pusha
 
     .loop:
         cmp cx, 0
         je .end
         sub cx, 1
-	    mov bh, 0x00
-	    mov ah, 0x0E
+	mov bh, 0x00
+	mov ah, 0x0E
         int 0x10
         jmp .loop
 
     .end:
-	    popa
-	    mov sp, bp
-	    pop bp
-	    ret
+	popa
+	mov sp, bp
+	pop bp
+	ret
 
 
 
