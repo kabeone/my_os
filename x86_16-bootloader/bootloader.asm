@@ -12,13 +12,6 @@ init_stack:
 boot:
 	cli
 	cld
-
-	mov dx, 0x202
-	call MovCursor
-
-	mov cx, 5
-	mov al, 0x41
-	call PutChar
 	hlt
 
 MovCursor:
