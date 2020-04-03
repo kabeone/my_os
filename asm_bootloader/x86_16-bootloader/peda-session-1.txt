@@ -1,0 +1,11 @@
+break *0x7c00
+break *0x7c28
+break *0x600000
+
+
+
+
+
+
+
+
