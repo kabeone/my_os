@@ -5,3 +5,5 @@ you can:
 	-it handles CPU exception and interrupts (such as keyboard intterupts)
 	-allocate memory
 
+lauch it using:
+	cargo xrun
