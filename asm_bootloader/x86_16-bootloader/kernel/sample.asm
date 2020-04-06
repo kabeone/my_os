@@ -1,4 +1,0 @@
-	mov bh, 0x00
-	mov ah, 0x0E
-	mov al, 41
-	int 0x10
