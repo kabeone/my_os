@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/Users/kabeone/kabeone/my_os/rust_OS/Cargo.toml
+cargo:rustc-link-search=native=/Users/kabeone/kabeone/my_os/rust_OS/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-a3a39e97ae23d7f1/out
+cargo:rustc-link-lib=static=kernel_bin-rust_os
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/Users/kabeone/kabeone/my_os/rust_OS/target/x86_64-os/debug/rust_os
+cargo:rerun-if-changed=build.rs

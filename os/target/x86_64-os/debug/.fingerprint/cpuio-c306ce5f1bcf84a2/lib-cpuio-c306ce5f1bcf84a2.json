@@ -1,0 +1,1 @@
+{"rustc":6944628228814404284,"features":"[]","target":5353270127634203469,"profile":5315123281511208291,"path":17359551344808991474,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"x86_64-os/debug/.fingerprint/cpuio-c306ce5f1bcf84a2/dep-lib-cpuio-c306ce5f1bcf84a2"}}],"rustflags":["--sysroot","/Users/kabeone/kabeone/my_os/rust_OS/target/sysroot"],"metadata":1789199351297772976}

@@ -1,0 +1,1 @@
+{"rustc":6944628228814404284,"features":"[]","target":7365668939840781249,"profile":14580975319137881965,"path":1036222786711178230,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"x86_64-os/debug/.fingerprint/rust_os-31b5837b21484aad/dep-bin-rust_os-31b5837b21484aad"}}],"rustflags":["--sysroot","/Users/kabeone/kabeone/my_os/rust_OS/target/sysroot"],"metadata":5414932022163758981}
